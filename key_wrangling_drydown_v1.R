@@ -10,6 +10,7 @@ library(dplyr)
 library(readxl)
 library(tidyr)
 
+#Script assumes that the working directory exists. Should be added to the input section above.
 setwd("~/Desktop/Ecophys/Analysis/data/")
 
 # Import data, dropping unnecessary columns
@@ -49,6 +50,15 @@ select(pot.id, treatment, Mat_Species, Pat_Species, Mat_ID, Pat_ID, Mat_Pop, Pat
 # Export as a CSV
 write.csv(merged_key, file = "key_drydown_07.28.21.csv", row.names = FALSE)
 
+
+#ABJ comments: Good job with this scripts. You use comments effectively and throughout the code. 
+#The variable names clearly communicate what the variable is storing. The code is quite easy
+#to read and understand. The dependencies appear to be necessary to running the code and are 
+#grouped together nicely.I like your usage of blank lines and indentations. The code is not
+#congested looking. I like how you includethe objective of the code, input file, and output
+#file names. I am unable to assess whether the code can be run without error because I 
+#do not have access to the necessary files. Assuming the files are not confidential, I would 
+#recommend adding the Drydown mapping key and population data files to the repository.
 
 
 
